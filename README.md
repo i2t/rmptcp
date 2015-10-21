@@ -6,7 +6,7 @@ Multipath TCP (MPTCP) is an extension to TCP in order to use simultaneously mult
 
 ## About the redundant scheduler for MPTCP
 
-This redundant scheduler is based on the default scheduler of MPTCP. The default scheduler selects the best subflow to send a data chunk on the basis of the state (active or backup) and Time to live (TTL) of the subflows. For every data chunk, the active subflow with the best TTL at that moment is selected. So, the data chunk is only sent through the best subflow and the other subflows are only used if retransmissions for that data chunk are required.
+This redundant scheduler is based on the default scheduler of MPTCP. The default scheduler selects the best subflow to send a data chunk on the basis of the state (active or backup) and Round-trip time (RTT) of the subflows. For every data chunk, the active subflow with the best RTT at that moment is selected. So, the data chunk is only sent through the best subflow and the other subflows are only used if retransmissions for that data chunk are required.
 
 On the other hand, this redundant scheduler sends the data replicated through all the active subflows available. The data is not replicated through backup subflows, which are only used in case of requiring retransmissions.
 
