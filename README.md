@@ -1,4 +1,10 @@
-# RMTCP - Redundant scheduler for Multitpath TCP (MPTCP)
+# RMPTCP - Redundant scheduler for Multitpath TCP (MPTCP)
+
+## IMPORTANT NOTE
+
+We collaborated to provide a redundant scheduler for the official MPTCP implementation of the Linux kernel.
+The commit (https://github.com/multipath-tcp/mptcp/commit/f15a343d382ee4dd96f346a01171aa11d9500265) was already pushed to the trunk branch.
+Thus, this implementation is outdated and is not going to be evolved anymore.
 
 ## Background of MPTCP
 
